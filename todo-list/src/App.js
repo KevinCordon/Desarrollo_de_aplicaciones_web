@@ -1,4 +1,7 @@
 import './App.scss';
+import Item from './components/Item/item'
+import Menu from './components/Navbar/navbar'
+import GoalForm from './components/GoalForm/goalform';
 import './App.scss';
 import Item from './components/Item/item'
 import Menu from './components/Navbar/navbar'
@@ -11,8 +14,18 @@ function App() {
   return (
     <div className="App">
       <Menu></Menu>
-      <Item></Item>
+      <Container fluid>
+      <Row>
+        <Col>
+        <GoalForm></GoalForm>
+        </Col>
+        <Col>
+        <Item></Item>
+        </Col>
+      </Row>
+    </Container>
 
+      <Item></Item>
     </div>
   );
 }

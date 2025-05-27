@@ -2,10 +2,13 @@ import './App.scss';
 import Item from './components/Item/item'
 import Menu from './components/Navbar/navbar'
 import GoalForm from './components/GoalForm/goalform';
+import './App.scss';
+import Item from './components/Item/item'
+import Menu from './components/Navbar/navbar'
+import goalform from './components/GoalForm/goalform';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
         </Col>
       </Row>
     </Container>
+
+      <Item></Item>
     </div>
   );
 }
